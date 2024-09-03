@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "ensamien-clubs"
+  },
+  "targets": {
+    "ensamien-clubs": {
+      "hosting": {
+        "aeronautics": [
+          "aeronautics"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

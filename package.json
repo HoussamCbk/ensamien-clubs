@@ -2,7 +2,9 @@
   "name": "@ensamien-clubs/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many --target=build"
+  },
   "private": true,
   "devDependencies": {
     "@astrojs/check": "^0.5.2",

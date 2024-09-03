@@ -1,0 +1,15 @@
+{
+  "hosting": [
+    {
+      "target": "aeronautics",
+      "public": "dist/apps/aeronautics",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
