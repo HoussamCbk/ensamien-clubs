@@ -1,0 +1,77 @@
+---
+import TeamMemberCard from "./cards/TeamMemberCard.astro";
+
+const members = [
+  {
+    "name": "Belbaraka Adam",
+    "position": "Team Leader",
+    "image": "https://aeronautics.ensamien.com/Board/picadam.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "El Alaoui Najib Aya",
+    "position": "Associate Team Leader",
+    "image": "https://aeronautics.ensamien.com/Board/picaya.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Ait Abdelmalek Doha",
+    "position": "General Secretary",
+    "image": "https://aeronautics.ensamien.com/Board/picdoha.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Hadri Maria",
+    "position": "Treasurer",
+    "image": "https://aeronautics.ensamien.com/Board/picmaria.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Choubik Houssam",
+    "position": "Logistics Manager",
+    "image": "https://aeronautics.ensamien.com/Board/pichoussam2.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Jaouhari Khadija",
+    "position": "Training Manager",
+    "image": "https://aeronautics.ensamien.com/Board/pickhadija.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Hamri Chaimaa",
+    "position": "Sponsorship and External Communication Manager",
+    "image": "https://aeronautics.ensamien.com/Board/picchaimaa1.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "El Mouafik Fatima-Ezzahra",
+    "position": "Event Manager",
+    "image": "https://aeronautics.ensamien.com/Board/picfati1.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Mokaddem Abdennour",
+    "position": "Design Manager",
+    "image": "https://aeronautics.ensamien.com/Board/picabdennour.jpg",
+    "socialLinks": {}
+  },
+  {
+    "name": "Idyouss Hafsa",
+    "position": "Media Manager",
+    "image": "https://aeronautics.ensamien.com/Board/pichafsa.jpg",
+    "socialLinks": {}
+  }
+];
+---
+
+<h2 id="aboutus" class="headline headline-2 section-title boardtitle">
+  <span class="span" id="spanabout">Our Executive Board</span>
+</h2>
+<section class="meet-the-team">
+  <div class="team-container">
+    {members.map((member) => (
+      <TeamMemberCard {...member} />
+    ))}
+  </div>
+</section>

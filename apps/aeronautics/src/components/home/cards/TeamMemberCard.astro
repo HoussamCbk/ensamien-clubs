@@ -1,0 +1,56 @@
+---
+
+interface Props {
+  name: string;
+  position: string;
+  image: string;
+  socialLinks: {
+    facebook?: string;
+    instagram?: string;
+    linkedin?: string;
+    email?: string;
+  }
+}
+
+const {
+  name,
+  position,
+  image,
+  socialLinks
+} = Astro.props;
+---
+
+<div class="team-member">
+  <div class="profile-pic">
+    <img src={image} alt={name} />
+  </div>
+  <div class="member-info">
+    <h3 class="name">{name}</h3>
+    <p class="position">{position}</p>
+    <div class="social-icons">
+      {socialLinks.facebook && <li>
+        <a href={socialLinks.facebook} class="social-link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>}
+
+      {socialLinks.instagram && <li>
+        <a href={socialLinks.instagram} class="social-link">
+          <ion-icon name="logo-Instagram"></ion-icon>
+        </a>
+      </li>}
+
+      {socialLinks.linkedin && <li>
+        <a href={socialLinks.linkedin} class="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>}
+
+      {socialLinks.email && <li>
+        <a href={`mailto:${socialLinks.email}`} class="social-link">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </li>}
+    </div>
+  </div>
+</div>
