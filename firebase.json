@@ -10,6 +10,17 @@
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "rotaract",
+      "public": "dist/apps/rotaract",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     }
   ]
 }

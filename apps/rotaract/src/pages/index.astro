@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import heroImg from "../../public/hero-img.jpeg";
+import { Image } from "astro:assets";
+---
+
+<Layout
+	title="Rotaract Club of ENSAM Casablanca"
+>
+	<section class="pt-8 lg:pt-32 size-full grid items-center">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
+			<h1
+				class="max-w-2xl mx-auto text-center font-bold text-4xl text-gray-900 mb-5 md:text-5xl !leading-normal"
+			>
+				Fostering Friendship, Fueling Service with
+				<span class="text-pink-600">Rotaract</span>
+				EMSAM Casablanca
+			</h1>
+			<p
+				class="max-w-sm mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9"
+			>
+				COMMING SOOOOOON...!
+			</p>
+		</div>
+		<div class="flex justify-center px-4">
+			<Image
+				src={heroImg}
+				alt="Rotaract Club of ENSAM Casablanca"
+				class="rounded-t-3xl h-auto object-cover"
+			/>
+		</div>
+	</section>
+</Layout>
